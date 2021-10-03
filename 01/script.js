@@ -6,5 +6,7 @@ document.title = "Modifying the DOM"
     console.log(child);
   }
 
-
-  document.body.style.background = "#f3f300";
+  const rand = (max) => {
+    return Math.floor(Math.random() * max +1);
+}
+document.querySelector("body").style.backgroundColor = `rgb(${rand(225)},${rand(225)},${rand(225)})`;
